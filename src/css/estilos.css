@@ -1,0 +1,156 @@
+body {
+    font-family: "Outfit", cursive;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+.selecao-de-personagens {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+}
+
+.selecao-de-personagens .lista-de-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.selecao-de-personagens .personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(75, 174, 255);
+    width: 100%;
+    text-align: center;
+}
+
+.lista-de-personagens .personagem img{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid rgb(75, 174, 255);
+    border-radius: 60px;
+    transition: 0.2s all ease-out;
+}
+
+.lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px 24px 8px rgb(109, 160, 255);
+    border-radius: 60px;
+    transition: 0.3s all ease-out;
+    animation: pulse 4s infinite;
+}
+
+.lista-de-personagens .personagem.selecionado:hover{
+    transform: scale(1.1);
+}
+
+.personagem-selecionado {
+    text-align: center;
+    max-height: 530px;
+}
+
+.personagem-selecionado .personagem-grande {
+    width: 285px;
+    height: 450px;
+}
+
+.personagem-selecionado .nome-personagem {
+    border-bottom: 2px solid rgb(75, 174, 255);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+}
+
+#clients {
+    width: 100%;
+    background: #0073bb79;
+    margin-top: 12%;
+    opacity: 0.9;
+    border-top: solid 4px rgb(75, 174, 255);
+    position: absolute;
+}
+
+#clients .headline {
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    border-bottom: solid 4px rgb(75, 174, 255);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.cliente {
+    display: inline-block;
+    width: 5%;
+    filter: invert(1);
+}
+
+#clients-containers {
+    padding: 10px;
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    text-align: center;
+}
+
+#clients #finalizacao {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    padding: 1%;
+    border-top: solid 4px rgb(75, 174, 255);
+    width: 100%;
+}
+
+@keyframes pulse {
+    00% {
+        box-shadow: 0px 0px 24px 5px rgb(75, 174, 255);
+      }
+      50% {
+        box-shadow: 0px 0px 24px 5px rgb(145, 205, 255), 0px 0px 40px 1px #effbff;
+      }
+      100% {
+        box-shadow: 0px 0px 24px 5px rgb(75, 174, 255);
+      }
+}

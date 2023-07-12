@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warframe Character Selector</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Oxanium:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">    
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/warframe logo.png" alt="Logo Warframe">
+    </header>
+    <video autoplay loop muted class="video-background">
+        <source src="./src/imagens/ce2c118760bb312745bb31924d4b4466.mp4" type="video/mp4">
+    </video>
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo">Selecione um Personagem</h1>
+            <ul class="lista-de-personagens">
+                
+                <li class="personagem selecionado" id="rhino" data-name="Rhino"
+                    data-description="O Rhino é um Warframe fortemente blindado com a força e a fortitude, imprudente e impetuoso. O Rhino troca velocidade por potência e foi projetado para desempenhar a função de tanque, com a capacidade de entrar na briga, atrair o fogo inimigo e dominar o campo de batalha à sua vontade por meio de pura força bruta.">
+                    <img src="./src/imagens/rhinoglifo.jpg" alt="Personagem Rhino">
+                </li>
+                <li class="personagem" id="mag" data-name="Mag"
+                    data-description="Mag é um Warframe baseado em força magnética. Ela possui alta força de escudo em troca de saúde reduzida, e suas habilidades a tornam um meio potente para controle e manipulação de multidões.">
+                    <img src="./src/imagens/magglifo.jpg" alt="Personagem Mag">
+                </li>
+                <li class="personagem" id="volt" data-name="Volt"
+                    data-description="Volt tem o poder de manejar e dobrar a eletricidade. Ele é altamente versátil, armado com habilidades poderosas que podem causar danos aos inimigos, fornecer cobertura e complementar o combate à distância e corpo a corpo.">
+                    <img src="./src/imagens/voltglifo.jpg" alt="Personagem Volt">
+                </li>
+                <li class="personagem" id="saryn" data-name="Saryn"
+                    data-description="Desencadeando uma epidemia interminável de esporos contagiosos, a mestra da doença Saryn erradica os seus inimigos através de uma decomposição horrível. Erupciona pústulas cáusticas para espalhar a sua doença, derrama cascas enganadoras para atrair o fogo inimigo, enquanto injeta veneno letal e exala vírus mortais para limpar o Sistema com o seu toque tóxico.">
+                    <img src="./src/imagens/sarynglifo.jpg" alt="Personagem Saryn">
+                </li>
+                <li class="personagem" id="atlas" data-name="Atlas"
+                    data-description="Com punhos frios como pedra e um físico de titã, Atlas dobra a rocha para incrustar e esmagar todos os adversários na sua luta. Campeão da terra elementar, ele manifesta formidáveis muralhas, pedregulhos esmagadores e irmãos golem para devastar o seu território.">
+                    <img src="./src/imagens/atlasglifo.jpg" alt="Personagem Atlas">
+                </li>
+                <li class="personagem" id="mesa" data-name="Mesa"
+                    data-description="A pistoleira Mesa usa tanto o estilo como o poder para derrotar os seus inimigos numa chuva rápida de munições balísticas.">
+                    <img src="./src/imagens/mesaglifo.jpg" alt="Personagem Mesa">
+                </li>
+                <li class="personagem" id="limbo" data-name="Limbo"
+                    data-description="Ao entrar na Fenda, Limbo demonstra a sua arte de viagem dimensional que perturba o contínuo espaço-tempo, dissipando as fronteiras entre os reinos e a realidade.">
+                    <img src="./src/imagens/limboglifo.jpg" alt="Personagem Limbo">
+                </li>
+                <li class="personagem" id="mirage" data-name="Mirage"
+                    data-description="Misteriosa e travessa, Mirage manipula o espectro da luz para ofuscar seus inimigos. Com imagens espelhadas enganosas, exibições fotocinéticas coloridas e pegadinhas explosivas na manga, cada campo de batalha se torna o palco de sua próxima apresentação.">
+                    <img src="./src/imagens/mirageglifo.jpg" alt="Personagem Mirage">
+                </li>
+                <li class="personagem" id="inaros" data-name="Inaros"
+                    data-description="Sepultado por eras, o antigo faraó Inaros desperta para devastar, consumir e conquistar toda a vida arrastada por suas tempestades de areia amaldiçoadas, deixando em seu rastro apenas o deserto estéril e árido da morte.">
+                    <img src="./src/imagens/inarosglifo.jpg" alt="Personagem Inaros">
+                </li>
+                <li class="personagem" id="nyx" data-name="Nyx"
+                    data-description="Embaralhe a psique do inimigo com seu toque subliminar, transformando amigo em inimigo enquanto o caos se instala. Manipule a mente como Nyx para dominar a vontade do inimigo, enfraquecer suas defesas e refletir seus ataques coletivos com sua habilidade psíquica.">
+                    <img src="./src/imagens/nyxglifo.jpg" alt="Personagem Nyx">
+                </li>
+                <li class="personagem" id="excalibur" data-name="Excalibur"
+                    data-description="Excalibur é um Warframe com tema de espada . Com o poder de canalizar energia em sua lâmina convocada, ele é um espadachim móvel com métodos de execução potentes.">
+                    <img src="./src/imagens/excaliburglifo.jpg" alt="Personagem Excalibur">
+                </li>
+                <li class="personagem" id="ember" data-name="Ember"
+                    data-description="O fogo radiante das estrelas ilumina nossos mundos em chamas. Ígnea como o sol ardente, a fúria ardente de Ember envolve seus inimigos e espalha suas cinzas no vento solar. Imperatriz da chama elementar, queime a terra com seus incêndios florestais. Controle sua fúria ou alimente o calor para desencadear uma incineração destrutiva, deixando cadáveres carbonizados e cinzas à deriva em seu mar escarlate.">
+                    <img src="./src/imagens/emberglifo.jpg" alt="Personagem Ember">
+                </li>
+                <li class="personagem" id="ash" data-name="Ash"
+                    data-description="Ash é um Warframe rápido e manobrável que possui um alto grau de capacidade de sobrevivência em campo. O movimento da equipe complementa as ferramentas mortais de assassinato, tornando Ash um equilíbrio perfeito entre a potência de matar e a furtividade.">
+                    <img src="./src/imagens/ashglifo.jpg" alt="Personagem Ash">
+                </li>
+                <li class="personagem" id="nova" data-name="Nova"
+                    data-description="Nova é um Warframe de alta tecnologia e com tema de antimatéria. Ela é um tanto frágil, não possui habilidades defensivas poderosas, tem baixa capacidade de escudo e saúde moderada. Em compensação, ela possui habilidades ofensivas extremamente poderosas, capazes de demolir grupos inteiros de inimigos.">
+                    <img src="./src/imagens/novaglifo.jpg" alt="Personagem Nova">
+                </li>
+                <li class="personagem" id="baruuk" data-name="Baruuk"
+                    data-description="Virtuosamente guiado por sua nobre disciplina, o monge pacifista Baruuk invoca runas sagradas para evitar conflitos e trazer uma calma abençoada para uma luta sem fim. Vá além do limite de sua paciência, para que os inimigos busquem o descanso eterno na tempestade desencadeada.">
+                    <img src="./src/imagens/baruukglifo.jpg" alt="Personagem Baruuk">
+                </li>
+                <li class="personagem" id="valkyr" data-name="Valkyr"
+                    data-description="Valkyr é um Warframe com tema de berserker. Movida por uma raiva feroz, seus ataques dilaceram suas presas com fúria e ferocidade, enquanto seus gritos torturados quebram o silêncio imponente da presença Tenno.">
+                    <img src="./src/imagens/valkyrglifo.jpg" alt="Personagem Valkyr">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/card-rhino.png" alt="Personagem Selecionado">
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Rhino</h2>
+                <p class="descricao-personagem" id="descricao-personagem">O Rhino é um Warframe fortemente blindado com a força e a fortitude, imprudente e impetuoso. O Rhino troca velocidade por potência e foi projetado para desempenhar a função de tanque, com a capacidade de entrar na briga, atrair o fogo inimigo e dominar o campo de batalha à sua vontade por meio de pura força bruta.</p>
+            </div>
+        </section>
+    </main>
+    <footer id="clients">
+        <div class="headline">Jogue em</div>
+        <div id="clients-containers">
+            <img src="./src/imagens/desktop.svg" class="cliente">
+            <img src="./src/imagens/playstation.svg" class="cliente">
+            <img src="./src/imagens/xbox.svg" class="cliente">
+            <img src="./src/imagens/Nintendo_Switch_Logo.svg" class="cliente">
+        </div>
+        <h2 id="finalizacao">Coppy right 2023- All right <br> Designer by Caio Henrique Novaes</h2>
+    </footer>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
